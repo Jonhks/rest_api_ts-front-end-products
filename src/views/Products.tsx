@@ -44,12 +44,13 @@ const Products = () => {
             </tr>
           </thead>
           <tbody>
-            {products.map((product) => (
-              <ProductDetail
-                key={product.id}
-                product={product}
-              />
-            ))}
+            {products &&
+              products.map((product) => (
+                <ProductDetail
+                  key={product.id}
+                  product={product}
+                />
+              ))}
           </tbody>
         </table>
       </div>
